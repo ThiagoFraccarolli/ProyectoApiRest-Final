@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "ad5a3531-3c62-4d1f-85dd-f2998c88f364",
+		"name": "ApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21931716"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "Clientes",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/clientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clientes/id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/clientes/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clientes/xedad",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/clientes/xedad",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"xedad"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Comprobante",
+					"item": [
+						{
+							"name": "Comprobantes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/comprobantes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comprobantes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Comprobantes/id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/comprobantes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"comprobantes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Producto",
+					"item": [
+						{
+							"name": "Productos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/productos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Producto/id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/productos/3",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Venta",
+					"item": [
+						{
+							"name": "Ventas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/ventas",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ventas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ventas/id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/ventas/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ventas",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "Clientes/crear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"idcliente\": 1,\r\n        \"dni\": 43974411,\r\n        \"nombre\": \"OUUU\",\r\n        \"apellido\": \"YEEE\",\r\n        \"fechanacimiento\": \"1989-03-29\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/clientes/crear",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"crear"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clientes/actualizar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"idcliente\": 6,\r\n        \"dni\": 43974412,\r\n        \"nombre\": \"OUiU\",\r\n        \"apellido\": \"YEEtE\",\r\n        \"fechanacimiento\": \"1989-03-29\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/clientes/actualizar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"actualizar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Producto",
+					"item": [
+						{
+							"name": "Productos/crear",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"idproducto\": 1,\r\n        \"descripcion\": \"MOUSE juy\",\r\n        \"precio\": 70000.0,\r\n        \"stock\": 70,\r\n        \"codigo\": \"TE1121\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/productos/crear",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos",
+										"crear"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Productos/actualizar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"idproducto\": 1,\r\n        \"descripcion\": \"MOUSE jul\",\r\n        \"precio\": 10000.0,\r\n        \"stock\": 60,\r\n        \"codigo\": \"TE1121\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/productos/actualizar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"productos",
+										"actualizar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Venta",
+					"item": [
+						{
+							"name": "Ventas/nueva",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"idproducto\": 4,\r\n        \"cantidad\": 2,\r\n        \"idcliente\": 5\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/ventas/nueva",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"ventas",
+										"nueva"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Cliente/borrar/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/borrar/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"borrar",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Producto/borrar/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos/borrar/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos",
+								"borrar",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ventas/borrar/id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/ventas/borrar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ventas",
+								"borrar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
